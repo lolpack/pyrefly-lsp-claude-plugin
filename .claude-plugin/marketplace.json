@@ -1,0 +1,15 @@
+{
+    "name": "pyrefly-lsp-claude-plugin",
+    "description": "Pyrefly LSP integration for Claude Code",
+    "owner": {
+        "name": "Aaron Pollack",
+        "url": "https://github.com/lolpack"
+    },
+    "plugins": [
+        {
+            "name": "pyrefly-lsp",
+            "version": "0.1.0",
+            "source": "./plugins/pyrefly"
+        }
+    ]
+}

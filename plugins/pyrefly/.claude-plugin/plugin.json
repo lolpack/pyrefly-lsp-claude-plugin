@@ -1,0 +1,37 @@
+{
+  "name": "pyrefly-lsp",
+  "version": "0.2.0",
+  "description": "Python code intelligence for Claude Code powered by Pyrefly, launched via uvx for zero global installs \u2014 diagnostics, inferred types, and code navigation.",
+  "author": {
+    "name": "Aaron Pollack",
+    "email": "pollackaaron@gmail.com"
+  },
+  "homepage": "https://pyrefly.org",
+  "repository": "https://github.com/lolpack/pyrefly-lsp-claude-plugin",
+  "license": "MIT",
+  "keywords": [
+    "python",
+    "lsp",
+    "language-server",
+    "type-checking",
+    "pyrefly",
+    "uv",
+    "uvx",
+    "pydantic"
+  ],
+  "lspServers": {
+    "pyrefly": {
+      "command": "uvx",
+      "args": [
+        "pyrefly@latest",
+        "lsp"
+      ],
+      "extensionToLanguage": {
+        ".py": "python",
+        ".pyi": "python",
+        ".pyw": "python",
+        ".ipynb": "python"
+      }
+    }
+  }
+}
